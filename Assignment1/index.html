@@ -6,30 +6,95 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Product responsive Design</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
     
-    <header>
+    <header class="bg-dark">
         <div class="d-flex align-items-center">
-            <img src="images/logo.png" alt="logo" width="80px" height="60px" class="rounded-circle">
-            <div>Genral Product Design</div>
-            <nav class="d-flex">
+            <img src="images/logo.png" alt="logo" class="img-fluid w-25 h-25 rounded-circle">
+            <div class="space">Genral Product Design</div>
+            <nav class="nav nav-pills flex-column flex-sm-row bg-dark">
+                <a class="flex-sm-fill text-sm-center nav-link active" href="#">Home</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="#">Contact Us</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="#">References</a>
+                <a class="flex-sm-fill text-sm-center nav-link disabled" href="#">Resreved</a>
+              </nav>
+            <!-- <nav class="d-flex">
                 <div class="mx-auto"><a href="#">About US</a></div>
                 <div class="mx-auto"><a href="#">Contact US</a></div>
                 <div class="mx-auto"><a href="#">Home</a></div>
-            </nav>
+            </nav> -->
         </div>
     </header>
+    <div class="main-section">
+
+        <section class="container-fluid responsive-section-1">
+            <div class="row d-flex  align-items-center">
+                    <section class="jumbotron jumbotron-fluid col-sm-12 col-md-12 col-lg-12">
+                        <div id="demo" class="carousel slide" data-ride="carousel">
     
-    <section class="container-fluid">
-        <div class="row">
-                <section class="responsive-section-1 col-md-8 order-md-2 col-lg-6"></section>
-                <section class="responsive-section-2 col-md-4 order-md-1 col-lg-3"></section>
-                <section class="responsive-section-3 col-md-12 order-md-3 col-lg-3"></section>
-        </div>
-    </section>
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                              <li data-target="#demo" data-slide-to="0" class="active"></li>
+                              <li data-target="#demo" data-slide-to="1"></li>
+                              <li data-target="#demo" data-slide-to="2"></li>
+                            </ul>
+                          
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="images/la.jpg" alt="Los Angeles">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/chicago.jpg" alt="Chicago">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/ny.jpg" alt="New York">
+                              </div>
+                            </div>
+                          
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                              <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                              <span class="carousel-control-next-icon"></span>
+                            </a>
+                          
+                          </div>
+                    </section>
+                    <!-- <section class="jumbotron jumbotron-fluid col-sm-12 col-md-12 col-lg-12">
+                        <div class="hero-img3">
+                            <img src="images/chicago.jpg" class="img-fluid"  alt="Responsive image">
+                        </div>
+                            
+                    </section>
+                    <section class="jumbotron jumbotron-fluid col-sm-12 col-md-12 col-lg-12">
+                        <img src="images/la.jpg" alt="Los Angeles">
+                    </section> -->
+            </div>
+            <div class="row d-flex align-items-center ">
+                <section class="jumbotron jumbotron-fluid col-sm-12 col-md-8 col-lg-8 responsive-section-2">
+                    <div class="hero-img3">
+                        <img src="images/chicago.jpg" class="img-fluid"  alt="Responsive image">
+                    </div>
+                </section>
+                <section class="jumbotron jumbotron-fluid col-sm-12 col-md-4 col-lg-4 responsive-section-3">
+                    <p class="d-flex align-items-center textblock" >
+                        Components and options for laying out your Bootstrap project, including wrapping containers, a powerful grid system, a flexible media object, and responsive utility classes.  
+                    </p>
+                </section>
+            </div>
+            
+        </section>
+
+    </div>
+    
 
     <footer class="page-footer font-small blue" style="background:#00adff">
         <div class="footer-copyright text-center py-3">
