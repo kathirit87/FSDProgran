@@ -1,6 +1,5 @@
 body{
     margin: 0;
-
 }
 
 header{
@@ -10,38 +9,35 @@ header{
     padding: 1em;
 }
 
+header img {
+    width: 10%;
+}
+
+footer{
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;    
+    color: whitesmoke;
+}
+
+footer a {
+    padding: 1em;
+}
 .logo-container{
     display: flex;
     align-items: center;
 }
 
 .main-section{
-    padding: 0 10%;
+    padding: 0 5%;
 
 }
 
 .responsive-section-1 , .responsive-section-2 , .responsive-section-3{
-    height: 500px;
-    width: 500px;
+    width: 30%;
+    height: 30%;
+    padding: 2em;
 }
-
-/* .responsive-section-1{
-    
-}
-.responsive-section-2{
-    
-}
-.responsive-section-3{
-    
-} */
-
-/* nav{
-    display: flex;
-}
-nav div{
-    margin: 2em;
-    padding: 1em;
-} */
 
 .space{
     padding: 1em;
@@ -54,4 +50,5 @@ nav div{
 .textblock{
     display: inline-block;
     margin: 0;
+    width: 100%;
 }
